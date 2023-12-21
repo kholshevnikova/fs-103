@@ -7,6 +7,32 @@ a {
 ul {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-title {
+  color: #111;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;  
+}
+
+.section-title span {
+    color: #FD9222;
+/*--------------Header--------- */
+
 .header-logo {
   color: #111;
   font-size: 18px;
@@ -23,4 +49,254 @@ ul {
 }
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-menu-link:active {
+  color: #fd9222;
+}
+/* ------------------------------------ */
+.main {
+}
+
+/* --------------hero----------------- */
+
+.hero {
+  background: rgba(17, 17, 17, 0.6);
+}
+.hero-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+.hero-made-btn {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hero-down-btn {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+.hero-buy-btn {
+  font-family: inherit;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+/* ---------features---------- */
+.features {
+  background: #1e1823;
+}
+.features-title {
+}
+.features-list {
+}
+.features-item {
+}
+.features-item-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+.features-item-text {
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 14px;
+
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+/* ---------TASTE---------- */
+.taste {
+}
+.taste-title {
+}
+
+.taste-text {
+  color: #111;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+.taste-list {
+}
+.taste-item {
+}
+.taste-img {
+}
+.taste-subtitle {
+color: #111;
+font-size: 14px;
+font-weight: 600;
+line-height: 1.29;
+letter-spacing: -0.02em;
+}
+/* --------------------- */
+/* ---------MADE---------- */
+
+.made {
+}
+.made-title {
+}
+
+.made-img {
+}
+.made-subtitle {
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-list-item {
+}
+.made-text {color: #111;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.29
+letter-spacing: -0.02em;
+}
+/* --------------------- */
+
+/* ---------PRODUCTS---------- */
+.products {
+}
+.products-title {
+}
+
+.products-list {
+}
+.products-item {
+}
+.products-img {
+}
+.products-subtitle {color: #111;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.33;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+.products-item-text {
+color: rgba(17, 17, 17, 0.70);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: -0.02em;
+}
+.products-item-btn {
+color: #111;
+font-size: 14px;
+font-weight: 600;
+line-height: normal;
+}
+/* --------------------- */
+
+/* ---------SELLERS---------- */
+.sellers {
+}
+.sellers-title {
+}
+.sellers-list {
+}
+.sellers-list-item {
+}
+.sellers-img {
+}
+.sellers-subtitle {
+color: #111;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.33;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+/* --------------------- */
+
+/* ---------LOVED---------- */
+.loved {
+}
+.loved-title {
+}
+
+.loved-list {
+}
+.loved-item {
+}
+.loved-img {
+}
+.loved-subtitle {
+color: #111;
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.33;
+}
+.loved-text {
+color: rgba(17, 17, 17, 0.70);
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.29;
+letter-spacing: -0.02em;
+}
+.loved-btn {
+color: #111;
+font-family: inherit;
+font-size: 18px;
+font-weight: 600;
+line-height: normal;
+}
+/* --------------------- */
+/* ---------FOOTER---------- */
+.footer {
+    background: #1E1823;
+}
+
+.footer-headind {color: #FFF;
+font-size: 28px;
+font-weight: 500;
+line-height: 1.21;
+letter-spacing: -0.02em;
+}
+.footer-subtitle {
+}
+.footer-soc-list {
+}
+.footer-item {
+}
+.footer-soc-link {
+}
+.footer-adress {
+}
+.footer-adress-list {
+}
+.footer-adress-item {
+}
+.footer-adress-link {
+}
+.footer-navigation {
+}
+.footer-menu-list {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
 }
