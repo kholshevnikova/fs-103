@@ -9,6 +9,10 @@ ul {
   list-style: none;
   margin-top: 0;
 }
+.link {
+  text-decoration: none;
+
+}
 
 .container {
   width: 1166px;
@@ -321,6 +325,7 @@ letter-spacing: -0.02em;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  font-style: normal;
 }
 .footer-navigation {
 }
