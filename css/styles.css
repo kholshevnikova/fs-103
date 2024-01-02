@@ -53,7 +53,7 @@ ul {
   padding-top: 50px;
 }
 
-.header-logo {
+.header-logotip {
   color: #111;
   font-size: 18px;
   font-weight: 700;
@@ -67,7 +67,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-logo-italic {
+.header-logotip-italic {
   font-style: italic;
 }
 
@@ -190,9 +190,10 @@ letter-spacing: -0.02em;
 .made-text {color: #111;
 font-size: 14px;
 font-weight: 400;
-line-height: 1.29
-letter-spacing:-0.02em;
+line-height: 1.29;
+letter-spacing: -0.02em;
 }
+
 /* --------------------- */
 
 /* ---------PRODUCTS---------- */
@@ -340,8 +341,12 @@ letter-spacing: -0.02em;
   line-height: 1.14;
   letter-spacing: -0.02em;
 }
-.footer-menu-link:hover,
-.footer-menu-link:focus,
+.footer-menu-link:hover {
+  color: #fd9222;
+}
+.footer-menu-link:focus {
+  color: #fd9222;
+}
 .footer-menu-link:active {
   color: #fd9222;
 }
