@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 h1,
@@ -34,12 +35,16 @@ address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
 .container {
   width: 100%;
   max-width: 1166px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 .visually-hidden {
@@ -76,13 +81,33 @@ address {
   padding-bottom: 32px;
 }
 
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
 .header-logotip {
   color: #111;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
+.header-menu-list {
+  display: flex;
+  gap: 24px;
+}
+
 .header-menu-link {
   color: #111;
   font-size: 14px;
@@ -99,6 +124,18 @@ address {
 .header-menu-link:active {
   color: #fd9222;
 }
+
+.header-soc-list {
+  display: flex;
+  gap: 14px;
+}
+
+.header-soc-item {
+}
+
+.header-soc-link {
+}
+
 /* ------------------------------------ */
 .main {
 }
@@ -129,6 +166,10 @@ address {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
 .hero-down-btn {
   color: #fff;
@@ -137,6 +178,7 @@ address {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
 }
 .hero-buy-btn {
   font-family: inherit;
@@ -145,6 +187,16 @@ address {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  padding: 14px 40px;
+  margin-right: 14px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 /* ---------features---------- */
 .features {
@@ -155,8 +207,13 @@ address {
 .features-title {
 }
 .features-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .features-item {
+  width: calc((100% - 88px * 2) / 3);
 }
 .features-item-title {
   color: #fff;
@@ -192,10 +249,20 @@ address {
   margin: 0 auto 50px;
 }
 .taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
 }
 .taste-item {
+  border-radius: 15px;
+  border: 1px solid #fd9222;
+  background: hsl(0, 0%, 100%);
+  width: calc((100% - 32px * 3) / 4);
+  padding: 28px 23px;
 }
 .taste-img {
+  margin: 0 auto;
+  margin-bottom: 36px;
 }
 .taste-subtitle {
   color: #111;
@@ -203,6 +270,7 @@ address {
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  padding-left: 5px;
 }
 
 /* --------------------- */
@@ -212,6 +280,17 @@ address {
   padding-top: 120px;
 }
 .made-title {
+  margin-bottom: 50px;
+}
+
+.made-content {
+  background-color: #ffffff;
+  padding: 32px;
+}
+
+.made-wrap {
+  display: flex;
+  gap: 20px;
 }
 
 .made-img {
@@ -221,11 +300,15 @@ address {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  margin-bottom: 28px;
+  max-width: 350px;
 }
 .made-list {
 }
 .made-list-item {
+  margin-bottom: 24px;
 }
+
 .made-text {
   color: #111;
   font-size: 14px;
