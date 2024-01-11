@@ -88,6 +88,14 @@ img {
   align-items: center;
 }
 
+.icons-soc {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.icons-soc:hover {
+  stroke: orange;
+}
 .header-container {
   display: flex;
   gap: 90px;
@@ -147,6 +155,14 @@ img {
 }
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/chocolate_main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 30px;
   padding: 381px 40px 40px 40px;
 }
@@ -295,6 +311,17 @@ img {
 
 .made-img {
 }
+
+.made-list-item::before {
+  content: "";
+  background-color: #4c4c4c;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  flex-shrink: 0;
+}
+
 .made-subtitle {
   color: #111;
   font-size: 18px;
@@ -307,6 +334,9 @@ img {
 }
 .made-list-item {
   margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
 }
 
 .made-text {
