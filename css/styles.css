@@ -205,11 +205,17 @@ img {
   cursor: pointer;
   border-radius: 100px;
   background: #fd9222;
-  border: none;
+  border: 1px solid transparent;
   padding: 14px 40px;
   margin-right: 14px;
+  transition-property: background-color, border-color;
+  transition-duration: 400ms, 0.3s;
 }
 
+.hero-buy-btn:hover {
+  background-color: transparent;
+  border-color: #fff;
+}
 .hero-buttons {
   display: flex;
   align-items: center;
@@ -230,6 +236,18 @@ img {
 }
 .features-item {
   width: calc((100% - 88px * 2) / 3);
+  position: relative;
+}
+.features-item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 124px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  right: -44px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .features-item-title {
   color: #fff;
@@ -386,14 +404,48 @@ img {
 
 /* ---------SELLERS---------- */
 .sellers {
+  padding-top: 120px;
 }
 .sellers-title {
+  margin-bottom: 50px;
 }
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 .sellers-list-item {
+  width: calc((100% - 16px * 2) / 3);
+  padding-bottom: 28px;
 }
+
+.sellers-list-item:hover .sellers-text-wrap {
+  transform: translateY(0%);
+}
+.sellers-text-wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 0.1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+
+  backdrop-filter: blur(7.5px);
+  border-radius: 15px 15px 0px 0px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+
 .sellers-img {
+}
+
+.sellers-cover-wrap {
+  position: relative;
+  overflow: hidden;
 }
 .sellers-subtitle {
   color: #111;
@@ -402,6 +454,15 @@ img {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.sellers-cover-text {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 /* --------------------- */
 
